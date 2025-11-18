@@ -1,10 +1,11 @@
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Product from './pages/Product'
 import Cart from './pages/Cart'
 import CustomRequest from './pages/CustomRequest'
 import Success from './pages/Success'
 import Cancel from './pages/Cancel'
+import Checkout from './pages/Checkout'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/products/:slug" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="/custom-request" element={<CustomRequest />} />
           <Route path="/success" element={<Success />} />
           <Route path="/cancel" element={<Cancel />} />
